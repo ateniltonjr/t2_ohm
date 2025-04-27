@@ -1,6 +1,6 @@
 ![image](https://github.com/user-attachments/assets/f2a5c9b8-6208-4723-8f46-1d74be421827)
 # Ohmímetro com Reconhecimento Automático do Código de Cores
-# # 📌 Sumário
+## 📌 Sumário
 Descrição do Projeto
 
 Funcionalidades Implementadas
