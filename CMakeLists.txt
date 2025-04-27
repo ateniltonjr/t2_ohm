@@ -1,11 +1,5 @@
 # Generated Cmake Pico project file
 
-cmake_minimum_required(VERSION 3.13)
-
-set(CMAKE_C_STANDARD 11)
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-
 # Initialise pico_sdk from installed location
 # (note this can come from environment, CMake cache etc)
 
@@ -23,6 +17,12 @@ if (EXISTS ${picoVscode})
     include(${picoVscode})
 endif()
 # ====================================================================================
+cmake_minimum_required(VERSION 3.13)
+
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 set(PICO_BOARD pico_w CACHE STRING "Board type")
 
 # Pull in Raspberry Pi Pico SDK (must be before project)
@@ -57,13 +57,8 @@ target_link_libraries(t2_ohm
 
 # Add the standard include files to the build
 target_include_directories(t2_ohm PRIVATE
-        ${CMAKE_CURRENT_LIST_DIR}
-)
-
-# Add any user requested libraries
-target_link_libraries(t2_ohm 
+        ${CMAKE_CURRENT_LIST_DIR})
         
-        )
-
+# Add any user requested libraries
+target_link_libraries(t2_ohm)
 pico_add_extra_outputs(t2_ohm)
-
