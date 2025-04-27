@@ -20,7 +20,9 @@
 
 ## 👨‍💻 Autor
 Atenilton Santos de Souza Júnior
+
 Desenvolvedor do projeto de instrumentação eletrônica
+
 GitHub [https://github.com/ateniltonjr](https://github.com/ateniltonjr)
 
 ## 🎥 Vídeo de Demonstração
