@@ -80,7 +80,9 @@ Este projeto implementa um ohmímetro inteligente baseado no microcontrolador RP
 - Botão B: Coloca o RP2040 em modo BOOTSEL para programação
 
 ## 🛠️ Esquema do Circuito
-[Imagem esquemática](#)
+### Esquema de conexão com a placa:
+
+![alt text](imagens/esquema.png)
 
 ## 📋 Esquema de Conexões
 ### Componente	Pino RP2040

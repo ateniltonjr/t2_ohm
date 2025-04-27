@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'build/t2_ohm.uf2'
+elf = 'build/t2_ohm.elf'
