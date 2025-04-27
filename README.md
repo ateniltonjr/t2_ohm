@@ -157,7 +157,7 @@ Este projeto implementa um ohmímetro inteligente baseado no microcontrolador RP
 
 - Aproximado: 10 kΩ
 
-### Cores: Marrom-Preto-Laranja
+- Cores: Marrom-Preto-Laranja
 
 ## Detalhes Adicionais:
 O vídeo demonstra todo o fluxo de operação do sistema
