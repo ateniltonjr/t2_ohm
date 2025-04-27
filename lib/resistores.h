@@ -40,7 +40,6 @@ const char *cores[] = {
     "Verde", "Azul", "Violeta", "Cinza", "Branco"
 };
 
-
 static const int resistores_comerciais[] = {
     r510, r560, r620, r680, r720, r750, r820, r910,
     r1k, r1k2, r1k5, r1k8, r2k2, r2k7, r3k3, r3k9,

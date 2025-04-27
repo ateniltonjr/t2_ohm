@@ -37,7 +37,9 @@ pico_sdk_init()
 
 add_executable(t2_ohm 
                 t2_ohm.c # Principal
-                lib/ssd1306.c)
+                # Pasta lib
+                lib/ssd1306.c
+                lib/matrixws.c)
 
 pico_set_program_name(t2_ohm "t2_ohm")
 pico_set_program_version(t2_ohm "0.1")
