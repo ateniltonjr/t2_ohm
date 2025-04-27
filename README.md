@@ -1,21 +1,22 @@
 ![image](https://github.com/user-attachments/assets/f2a5c9b8-6208-4723-8f46-1d74be421827)
 # Ohmímetro com Reconhecimento Automático do Código de Cores
 ## 📌 Sumário
-Descrição do Projeto
+### Descrição do Projeto
 
-Funcionalidades Implementadas
+### Funcionalidades Implementadas
 
-Esquema do Circuito
+### Esquema do Circuito
 
-Esquema de Conexões
+### Esquema de Conexões
 
-Como Compilar e Executar
+### Como Compilar e Executar
 
-Saída Esperada
+### Saída Esperada
 
-Autor
+### Autor
 
-Vídeo de Demonstração
+### Vídeo de Demonstração
+
 
 ## 👨‍💻 Autor
 Atenilton Santos de Souza Júnior
@@ -30,132 +31,131 @@ Assista ao vídeo de demonstração
 Este projeto implementa um ohmímetro inteligente baseado no microcontrolador RP2040 (BitDogLab) que mede resistências na faixa de 510Ω a 100kΩ (série E24 com 5% de tolerância) e identifica automaticamente o código de cores correspondente (3 primeiras faixas, sendo a quarta sempre dourada).
 
 ## ✨ Funcionalidades Implementadas
-Sistema de medição preciso:
+### Sistema de medição preciso:
 
-Utiliza resistor de referência de 10kΩ
+- Utiliza resistor de referência de 10kΩ
 
-Faixa de medição: 510Ω a 100kΩ
+- Faixa de medição: 510Ω a 100kΩ
 
-Leitura ADC com resolução de 12 bits (0-4095)
+- Leitura ADC com resolução de 12 bits (0-4095)
 
-Processamento e exibição:
+### Processamento e exibição:
 
-Cálculo do valor real da resistência
+- Cálculo do valor real da resistência
 
-Aproximação para valor comercial mais próximo (série E24)
+- Aproximação para valor comercial mais próximo (série E24)
 
-Identificação automática do código de cores (3 faixas)
+- Identificação automática do código de cores (3 faixas)
 
-Saídas de informação:
+- Saídas de informação:
 
-Display OLED SSD1306:
+- Display OLED SSD1306:
 
-Valor do ADC (0-4095)
+- Valor do ADC (0-4095)
 
-Valor real calculado
+- Valor real calculado
 
-Valor aproximado (E24)
+- Valor aproximado (E24)
 
-Representação gráfica das 3 faixas de cores
+- Representação gráfica das 3 faixas de cores
 
-Monitor Serial:
+### Monitor Serial:
 
-Valor real calculado
+- Valor real calculado
 
-Valor aproximado (E24)
+- Valor aproximado (E24)
 
-Valor bruto do ADC
+- Valor bruto do ADC
 
-Matriz de LEDs WS2812B:
+### Matriz de LEDs WS2812B:
 
-Visualização do código de cores (acionado pelo botão A)
+- Visualização do código de cores (acionado pelo botão A)
 
-Controles:
+### Controles:
 
-Botão A: Ativa visualização do código de cores na matriz de LEDs
+- Botão A: Ativa visualização do código de cores na matriz de LEDs
 
-Botão B: Coloca o RP2040 em modo BOOTSEL para programação
+- Botão B: Coloca o RP2040 em modo BOOTSEL para programação
 
 ## 🛠️ Esquema do Circuito
-[Conteúdo original...]
+[Imagem esquemática](#)
 
 ## 📋 Esquema de Conexões
-Componente	Pino RP2040
+### Componente	Pino RP2040
 
-OLED SDA	GPIO0
+- OLED SDA	GPIO14
 
-OLED SCL	GPIO1
+- OLED SCL	GPIO15
 
-Matriz LED	GPIO2
+- Matriz LED	GPIO7
 
-ADC (Resistor)	GPIO28
+- ADC (Resistor)	GPIO28
 
-Botão A	GPIO3
+- Botão A	GPIO5
 
-Botão B	GPIO4
+- Botão B	GPIO6
 
 
 ## 🚀 Como Compilar e Executar no VS Code
-e
-Pré-requisitos:
+### Pré-requisitos:
 
-VS Code com extensão "Pico W-Go" ou "Cortex-Debug"
+- VS Code com extensão "Pico W-Go" ou "Cortex-Debug"
 
-SDK do Raspberry Pi Pico instalado
+- SDK do Raspberry Pi Pico instalado
 
-Kit de ferramentas ARM GCC
+- Kit de ferramentas ARM GCC
 
-Configuração do projeto:
+### Configuração do projeto:
 
-bash
+- bash
 
-git clone https://github.com/ateniltonjr/t2_ohm.git
+- git clone https://github.com/ateniltonjr/t2_ohm.git
 
-cd t2_ohm
+- cd t2_ohm
 
-mkdir build
+- mkdir build
 
-cd build
+- cd build
 
-cmake ..
+- cmake ..
 
 
-Compilação:
+### Compilação:
 
-Abra o projeto no VS Code
+- Abra o projeto no VS Code
 
-Pressione Ctrl+Shift+B para compilar
+- Pressione Ctrl+Shift+B para compilar
 
-Ou execute no terminal:
+- Ou execute no terminal:
 
-bash
+- bash
 
-make -j4
+- make -j4
 
-Upload para a placa:
+### Upload para a placa:
 
-Mantenha pressionado o botão BOOTSEL enquanto conecta a placa via USB
+- Mantenha pressionado o botão BOOTSEL enquanto conecta a placa via USB
 
-Copie o arquivo ohmimetro.uf2 para a unidade RPI-RP2
+- Copie o arquivo ohmimetro.uf2 para a unidade RPI-RP2
 
-Monitoramento Serial:
+### Monitoramento Serial:
 
-Conecte via terminal serial (115200 baud):
+- Conecte via terminal serial (115200 baud):
 
-bash
-minicom -o -D /dev/ttyACM0
-ou use o monitor serial do VS Code
+- bash
+- minicom -o -D /dev/ttyACM0
+- ou use o monitor serial do VS Code
 
 ## 📊 Saída Esperada
-Exemplo:
+### Exemplo:
 
-ADC: 2048
+- ADC: 2048
 
-Valor Real: 9.95 kΩ
+- Valor Real: 9.95 kΩ
 
-Aproximado: 10 kΩ
+- Aproximado: 10 kΩ
 
-Cores: Marrom-Preto-Laranja
+### Cores: Marrom-Preto-Laranja
 
 ## Detalhes Adicionais:
 O vídeo demonstra todo o fluxo de operação do sistema
