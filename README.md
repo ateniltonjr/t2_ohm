@@ -162,13 +162,13 @@ Este projeto implementa um ohmímetro inteligente baseado no microcontrolador RP
 - Cores: Marrom-Preto-Laranja
 
 ## Detalhes Adicionais:
-O vídeo demonstra todo o fluxo de operação do sistema
+- O vídeo demonstra todo o fluxo de operação do sistema
 
-Mostra a medição de diferentes resistores
+- Mostra a medição de diferentes resistores
 
-Apresenta a visualização tanto no display quanto na matriz de LEDs
+- Apresenta a visualização tanto no display quanto na matriz de LEDs
 
-Inclui detalhes sobre a precisão das medições
+- Inclui detalhes sobre a precisão das medições
 
 ## Como Contribuir:
 Faça um fork do projeto
