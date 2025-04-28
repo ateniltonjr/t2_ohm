@@ -1,26 +1,32 @@
 /*
 *             ___________________________________________
 *            |                                           |
-*            |  PROJETO: DualControl Matrix              |
+*            |  PROJETO: Ohmímetro com BitDogLab         |
 *            |                                           |
-*            |  ► Controle simultâneo de:                |
-*            |    - Matriz LED 5x5 (WS2812B)             |
-*            |    - Display OLED 128x64 (SSD1306)        |
+*            |  ► Medição de Resistores entre 510 e 10k  |
+*            |     Ohm com 5% de tolerância.             |
 *            |                                           |
-*            |  ► Funcionalidades:                       |
-*            |    - Joystick analógico para navegação    |
-*            |    - Modos RGB com ajuste PWM             |
-*            |    - Feedback sonoro via buzzer           |
+*            |  ► Os valores do ADC, valor aproximado    |
+*            |    e valor real medido são mostrados no   |
+*            |    display OLED e no monitor serial,      |
+*            |    bem como as três primeiras faixas do   |
+*            |    código de cores.                       |
 *            |                                           |
-*            |  ► Tecnologias:                           |
-*            |    - RP2040 (BitDogLab)                   |
-*            |    - Protocolos: I2C, UART, ADC, PWM, PIO |
+*            |  ► Uma representação do código de cores   |
+*            |    é mostrada na matriz de leds, esta     |
+*            |    opção é ativada quando o botão A é     |
+*            |    pressionado.                           |
+*            |                                           |
+*            |   ► O botão B permite colocar o raspberry |
+*            |     em modo bootsel.                      |
+*            |                                           |
+*            |    Protocolos: I2C, UART, ADC e PIO       |
 *            |                                           |
 *            |  AUTOR: Atenilton Santos de Souza Júnior  |
 *            |___________________________________________|
 */
 
-#include "lib_principal/ohmimetro.h"
+#include "ohmimetro.h"
 
  // Eventos dos botões
 void eventos_botoes() 

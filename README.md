@@ -27,7 +27,7 @@ GitHub [https://github.com/ateniltonjr](https://github.com/ateniltonjr)
 
 ## 🎥 Vídeo de Demonstração
 Assista ao vídeo de demonstração
-[Vídeo](#link)
+[Vídeo](https://drive.google.com/file/d/1SHLV5zPxFhERj2N0r0A_BOPqqDoPx0XL/view?usp=sharing)
 
 ## 📝 Descrição do Projeto
 Este projeto implementa um ohmímetro inteligente baseado no microcontrolador RP2040 (BitDogLab) que mede resistências na faixa de 510Ω a 100kΩ (série E24 com 5% de tolerância) e identifica automaticamente o código de cores correspondente (3 primeiras faixas, sendo a quarta sempre dourada).
